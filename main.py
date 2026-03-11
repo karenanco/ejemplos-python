@@ -133,7 +133,7 @@ for i in personas:
     print(i)
  """
  
-alumnos = [] #lista vacia
+""" alumnos = [] #lista vacia
 
 while True:
     print("----------menu")
@@ -153,7 +153,29 @@ while True:
         alumnos.remove(nombre)
         print(alumnos)
     else:
-        break
+        break """
+
+""" alumnos = ["carlos", "manuel"]
+numero = [1,2,3,4,5,6,7,8,9,4,3,5,5,3,2,5,7,4,9,3] """
+
+""" print(len(alumnos)) """
+""" print(dir(alumnos)) """
+
+""" print (range(5))
+for i in range(5):
+    print(i) """
+
+""" ordenados = sorted(numero)
+print(numero)
+ordenados = sorted(numero)
+print(ordenados) """
+
+#slices
+
+texto = "hola gato pelao"
+print(texto[:6])
+
+
 
     
     
