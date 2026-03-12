@@ -1,4 +1,4 @@
-import math
+""" import math
 import random
 
 
@@ -27,18 +27,18 @@ bool #esto es verdadero  o falso
 #print(resultado)
 #
 
-#INPUT
+#INPUT """
 """ precio = input("escribe un precio : ")# pedir por consola un dato tipo str
 precio = int(precio) #convertir a entero el str con int(precio)
 resultado = precio + 10 #el precio sumado + 10 ya que ahora es numero entero
 print(resultado)# imprimeme el precio en pantalla """
 
-## CONDICIONALES
+""" ## CONDICIONALES
 
 
 #if condicion:
 #    codigo
-#comparadores
+#comparadores """
 """ 
 == igual
 != diferente
@@ -49,7 +49,7 @@ print(resultado)# imprimeme el precio en pantalla """
 """
 
 
-edad = 20
+""" edad = 20 """
 
 """ if edad >= 18:
     print("puede entrar a la disco")
@@ -59,13 +59,13 @@ else:
     print("no puede entrar a la disco")     
  """
 
-#BUCLES
+""" #BUCLES
 
 #WHILE
 #while condicion:
 #    codigo
 # while significa mientras pase algo
-contador = 0
+contador = 0 """
 
 """ while contador < 10:
     print(contador)
@@ -78,17 +78,17 @@ contador = 0
         break """
 
 
-#FOR
+""" #FOR
 
 #for elemento in lista
-#    codigo
+#    codigo """
 """ lista = ["hola","a","todos"]
 
 for i in lista:
     print(i) """
 
 
-## tipos de datos 2 
+""" ## tipos de datos 2 
 
 ## listas
 lista = [1,2,3,4,5,6]  ## corchetes son importantes
@@ -108,7 +108,7 @@ frutas = ["manzana","uva","kiwi","sandia", [1,2,3,4,[5,6,7]]]
     #        -5      -4     -3     -2            -1
 frutas[3] = "pera"
 frutas[0] = "algo"
-frutas[4] = [] #lista vacia
+frutas[4] = [] #lista vacia """
 
 """ print(frutas[2])
 print(frutas[1])
@@ -169,13 +169,13 @@ for i in range(5):
 print(numero)
 ordenados = sorted(numero)
 print(ordenados) """
-
+""" 
 #slices
 
 texto = "hola gato pelao"
 print(texto[:6])
 
-
+ """
 
     
     
