@@ -1,169 +1,230 @@
+import os
+
 ## diccionarios
 #una estructura de datos
 
-#que guarda datos en formato clave, valor
-#clave:valor
-#"nombre:"cristian"
+#que guarda datos en formato clave , valor
 
-""" persona = {
+#  clave  :    valor
+# "nombre":"cristian"
+
+
+persona = {
     "nombre" : "carlos",
     "edad" : 28,
-    "dirección" : "calle falsa 123",
+    "direccion": "calle falsa 123",
     "ciudad" : "valparaiso"
 }
 
-print(persona) """
 
-#acceder a los valores de nuestro diccionario con ["keys"]
-#print (persona["ciudad"])
+# acceder a los valores de nuestro diccionario con ["keys"]
+#print(persona["ciudad"])
 
-#modificar valores 
+#modificar valores
 
-""" persona["edad"] = 35
+persona["edad"] = 35
 persona["nombre"] = "carla"
 
-print(persona) """
 
-#agregar un dato nuevo
 
-""" persona ["pais"] = "chile"
+#agregar un dato nuevo 
+
+persona["pais"] = "chile"
 persona["altura"] = 190
 
-print(persona) """
+#print(persona)
 
-#recorrer el diccionario
-#iterar keys
-""" for i in persona:
-    print(i) """
 
-#iterar values
-""" for v in persona.values():
-    print(v) """
+#  recorrer el diccionario
+# iterar keys
+""" for k in persona:
+    print(k)
 
-#iterar todo
-""" for k , v in persona.items():
-    print(k.v)
- """
+##iterar values
+for v in persona.values():
+    print(v)
 
-#Lista de diccionario de alumnos
+# iterar todo 
+for k , v in persona.items():
+    print(k,v) """
+
+
+""" #lista de diccionarios de alumnos 
 alumnos = []
 
-while True:
-    print("-----------Menú----------")
-    print("1. Agregar alumno")
-    print("2. Ver alumnos")
-    print("3. Salir")
 
-    opcion = input("Elige una opción")
+while True:
+
+    print("--------menu--------")
+    print("1. agregar alumno")
+    print("2. ver alumnos")
+    print("3. salir")
+
+    opcion = input("elige una opcion")
+    os.system('cls' if os.name == 'nt' else 'clear')
 
     if opcion == "1":
-        nombre = input("Nombre de alumno:")
-        edad = input("Edad del alumno:")
+        nombre = input("nombre de alumno")
+        edad = input("edad del alumno")
 
         alumno = {
-            "nombre": nombre,
+            "nombre":nombre,
             "edad": edad
         }
         alumnos.append(alumno)
 
-        print("alumno agregado!!!")
+        print("alumno agragado!!!!")
 
     elif opcion == "2":
 
-        print("----------Lista de alumnos----------")
+        print("------lista de alumnos-----")
 
         for alumno in alumnos:
-            print(alumno["nombre"], "--" ,alumno["edad"])
-
+            print(alumno["nombre"], "--",alumno["edad"])
+    
     elif opcion == "3":
         print("programa cerrado")
         break
+
     else:
-        print("Opcion no correcta, solo se acepta 1,2 y 3 programa cerrado")
+        print("opcion no correcta solo se acepta 1,2 y 3 programa cerrado")
+        break
 
-# Proyecto de lista de películas netflix
+     """
 
-pelicula = {
+
+
+# proyecto de lista de peliculas netflix 
+
+""" pelicula = {
     nombre : nombre
-    anio : anio
-    actores : [actor1,actor2...]
-}
+    anio:anio
+    actores: [actor1,actor2...]
+    } """
 
-# peliculas=[{pelicula1},{pelicula2}...]
-# int()  
+#peliculas=[{pelicula1},{pelicula2}...]
+
 
 #flujo del programa
 '''
-generar lista vacia
+
+generar la lista vacia
 peliculas=[]
-imprimir
------Menú-----
-1. Agregar
-2. Borrar
-3. Ver
-4. Salir
 
-que el usuario entregue la opción
 
-si el usuario eligió 1
-        ingresar nombre de la pelicula
-        ingresar anio de la pelicula
-        ingresar género
+MIENTRAS EL PROGREAMA ESTE CORRIENDO
+imprimir 
+menu 
+1. agregar pelicula a la lista
+2. borrar
+3. ver
+4. salir
+
+que el usuario entrege la opcion 
+
+si el usuario eligio 1
+        ingresamos nombre de la pelicula
+        ingresamos al anio
+        ingresar genero 
         pelicula = {
             nombre : nombre
-            anio :anio
-            actores : [actor1,actor2...]
+            anio:anio
+            genero:genero]
             }
-        agregar la película a la lista (append)
-        mensaje que la película está guardada
+        agregar la pelicula a la lista(append)
+        mesaje que la pelicula esta guardada
 
-si el usuario eligió 2
-        ingresar la pelicula a borrar
-        buscamos la pelicula a borrar
-        borramos
-
-si el usuario eligió 3
-        ve el listado
-
-si el usuario eligió 4
-        mensaje de salida
+si el usuario eligio 2 
+           ingresar la pelicula a borrar 
+           buscamos la pelicula a borrar
+           borramos
+   
+si el usuario eligio 3
+        ver listado
+si el usuario eligio
+        mensaje de salida 
         break
-
-si el usuario puso otra cosa, el progama se cierra
+        
+si el usuario puso otra cosa el program se cierra
 
 '''
 
-peliculas = []
+peliculas=[]
 
 while True:
-    print("-----------Menú----------")
-    print("1. Agregar")
-    print("2. Borrar")
-    print("3. Ver")
-    print("4. Salir")
+    print("menu")
+    print("1. agregar pelicula a la lista")
+    print("2. borrar")
+    print("3. ver lista de pelis pelis")
+    print("salir")
 
-    opcion = input(ingrese la opcion)
+    opcion = input("ingrese la opcion")
 
     if opcion == "1":
-        nombre = input("Ingresar nombre de la película")
-        nombre = input("Ingresar anio de la película")
-        nombre = input("Ingresar género de la película")
+        nombre = input("ingresar nombre de la pelicula")
+        genero = input("ingresar genero de la pelicula")
+        anio = input("ingresar anio de la pelicula")
 
         pelicula = {
             "nombre" : nombre,
-            "anio" :anio,
-            "genero" : genero
+            "anio":anio,
+            "genero":genero
             }
         peliculas.append(pelicula)
-        print("la pelicula esta guardada")
+        print("pelicula esta guardada")    
     elif opcion == "2":
         peli_borrar = input("ingresa la peli a borrar")
-
+         
         for peli in peliculas:
-
+            
             if peli["nombre"] == peli_borrar:
+                peliculas.remove(peli)
+                print("peli borrada")
+                break
     elif opcion == "3":
+        print(peliculas)
+
+        
+
     elif opcion == "4":
-    else: 
-        print("opcion no valida")
-    
+        print("programa terminado!!!")
+        break
+
+
+    else:
+        print("opcion no valida terminando programa")
+        break
+
+
+
+
+
+
+
+
+#quiero guardar datos de google maps en una base de datos
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

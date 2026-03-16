@@ -1,13 +1,26 @@
-""" def saludar():
-    print("hola esta es mi primera funcion!!")
+def saludar():
+    print("")
 
-saludar() #invoke """
+saludar() #invoke
 
-
+            #3       8
 def sumar(numero1, numero2):
+    """
+    funcion que sum
+    """
     resultado = numero1 + numero2
-    return resultado
+    return   resultado
 
-ver = sumar(3,8)
+ver = sumar(100,378)
 
 print(ver)
+
+len()
+
+
+
+
+    
+
+    
+

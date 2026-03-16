@@ -1,4 +1,4 @@
-""" import math
+import math
 import random
 
 
@@ -17,6 +17,7 @@ str #esto es un texto
 int #esto es un entero
 float #esto es un flotante 
 bool #esto es verdadero  o falso
+list
 
 #INPUT
 #input()
@@ -27,18 +28,18 @@ bool #esto es verdadero  o falso
 #print(resultado)
 #
 
-#INPUT """
+#INPUT
 """ precio = input("escribe un precio : ")# pedir por consola un dato tipo str
 precio = int(precio) #convertir a entero el str con int(precio)
 resultado = precio + 10 #el precio sumado + 10 ya que ahora es numero entero
 print(resultado)# imprimeme el precio en pantalla """
 
-""" ## CONDICIONALES
+## CONDICIONALES
 
 
 #if condicion:
 #    codigo
-#comparadores """
+#comparadores
 """ 
 == igual
 != diferente
@@ -49,7 +50,7 @@ print(resultado)# imprimeme el precio en pantalla """
 """
 
 
-""" edad = 20 """
+edad = 20
 
 """ if edad >= 18:
     print("puede entrar a la disco")
@@ -59,13 +60,13 @@ else:
     print("no puede entrar a la disco")     
  """
 
-""" #BUCLES
+#BUCLES
 
 #WHILE
 #while condicion:
 #    codigo
 # while significa mientras pase algo
-contador = 0 """
+contador = 0
 
 """ while contador < 10:
     print(contador)
@@ -78,26 +79,26 @@ contador = 0 """
         break """
 
 
-""" #FOR
+#FOR
 
 #for elemento in lista
-#    codigo """
+#    codigo
 """ lista = ["hola","a","todos"]
 
 for i in lista:
     print(i) """
 
 
-""" ## tipos de datos 2 
+## tipos de datos 2 
 
 ## listas
 lista = [1,2,3,4,5,6]  ## corchetes son importantes
 ## 
 diccionario = {"key":"value"}
 ##sets
-sets={}
+sets={1,2,3,4,5}
 ##tuplas
-tuplas = ()
+tuplas = (1,2,3,4,5,6)
 
 
 
@@ -108,7 +109,7 @@ frutas = ["manzana","uva","kiwi","sandia", [1,2,3,4,[5,6,7]]]
     #        -5      -4     -3     -2            -1
 frutas[3] = "pera"
 frutas[0] = "algo"
-frutas[4] = [] #lista vacia """
+frutas[4] = [] #lista vacia
 
 """ print(frutas[2])
 print(frutas[1])
@@ -139,8 +140,8 @@ while True:
     print("----------menu")
     print("opcion 1 agregar")
     print("opcion 2 borrar")
-    print("opcion 3")
-    print("opcion 4")
+    print("opcion 3 actualizar")
+    print("opcion 4 salir")
     opcion = input("ingresa la opcion :")
 
 
@@ -151,63 +152,40 @@ while True:
     elif opcion == "2":
         nombre = input("ingresa el nombre alumno")
         alumnos.remove(nombre)
-        print(alumnos)
+        prin[t(alumnos)
+    elif opcion == 3:
+        print("buscar alumno")
     else:
-        break """
+        break  """
 
-""" alumnos = ["carlos", "manuel"]
-numero = [1,2,3,4,5,6,7,8,9,4,3,5,5,3,2,5,7,4,9,3] """
+alumnos = ["carlos", "manuel"]
 
-""" print(len(alumnos)) """
-""" print(dir(alumnos)) """
+for i in range(0):
+    print(i)
 
-""" print (range(5))
-for i in range(5):
-    print(i) """
+#rango si le paso 4 me genera = 0,1,2,3
+#10  = 0,1,2,3,4,5,6,7,8,9
 
-""" ordenados = sorted(numero)
-print(numero)
-ordenados = sorted(numero)
-print(ordenados) """
-""" 
-#slices
 
-texto = "hola gato pelao"
-print(texto[:6])
+numeros = [1,2,3,4,5,6,7,8,9,10,1,2,4,5,6,7,8,9,8,7,6,5,4,3,2,1]
+ordenados = sorted(numeros , reverse=True)
+print(ordenados)
 
- """
 
+#slices donde corto
+texto = "palabra"
+palindromo = "palabra"
+if palindromo == texto[::-1]:
+    print("esto es un palindromo!!!!")
+
+print(texto[::-1]) 
+print(texto.count("a"))
     
-    
-    
-    
-
-
-       
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ##diccionarios
+
+
+
 
 
 
